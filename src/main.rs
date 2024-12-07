@@ -14,9 +14,9 @@ use rand::{RngCore, SeedableRng};
 pub mod save_to_file;
 pub use save_to_file::*;
 
-fn q2_archiver_plusieur_tirages()
+fn q2_archiver_plusieurs_tirages()
 {
-    println!("q2_archiver_plusieur_tirages");
+    println!("q2_archiver_plusieurs_tirages");
 
     let seed = [0u8, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
     let mut rng = Mt32::from_seed(seed); // initialisation de mersenne twister
@@ -204,7 +204,7 @@ fn main()
 {
     let begin = Instant::now();
     
-    q2_archiver_plusieur_tirages();
+    q2_archiver_plusieurs_tirages();
     println!();
 
     q3_archiver_10_status();
